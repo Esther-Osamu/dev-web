@@ -1,0 +1,198 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html {
+  font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+  background-color: #e9eaf8;
+}
+header {
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+  padding: 6vw 0 3vw 0;
+}
+header nav ul {
+  padding: 2vw 0 3vw 0;
+  font-weight: 500;
+}
+
+.contact {
+  background: #747ed1;
+  color: white;
+  padding: 2vw 3vw 2vw 3vw;
+  display: inline-block;
+  border-radius: 7vw;
+  margin-top: 1.5vw;
+}
+
+/* === SECTION.BNR === */
+.bnr {
+  background: #51225e;
+  margin: 10vw 2vw 10vw 2vw;
+  color: white;
+  text-align: center;
+  padding: 15vw 20vw 15vw 20vw;
+  border-radius: 15px;
+}
+h2 {
+  font-family: "Fredoka", sans-serif;
+  margin: 0 0 8vw 0;
+  font-size: 2rem;
+}
+.bnr p {
+  font-family: "Urbanist", sans-serif;
+}
+
+/* === SECTION.WEB === */
+
+.web {
+  background-color: white;
+  margin: 10vw 2vw 10vw 2vw;
+  padding: 15vw 20vw 15vw 20vw;
+  text-align: center;
+  border-radius: 15px;
+}
+.web h2 {
+  margin: 8vw 0 8vw 0;
+  font-size: 24px;
+  font-weight: 450;
+  font-family: "Fredoka", sans-serif;
+}
+.web p {
+  font-family: "Urbanist", sans-serif;
+  font-size: 19px;
+}
+.web a {
+  display: inline-block;
+  margin-top: 8vw;
+  background: #e9eaf8;
+  font-family: "Urbanist", sans-serif;
+  padding: 3vw 4vw 3vw 4vw;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #747ed1;
+  font-weight: 500;
+}
+/* === SECTION.PROCESS === */
+.process {
+  background: white;
+  text-align: center;
+  margin: 10vw 2vw 10vw 2vw;
+  padding: 15vw 20vw 15vw 20vw;
+  border-radius: 15px;
+}
+.process h2 {
+  margin: 8vw 0 8vw 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 26px;
+}
+.process h2 span {
+  color: #747ed1;
+  border-bottom: #747ed1 2px solid;
+}
+.process ul li {
+  margin: 15vw 0 0 0;
+}
+.process ul li h3 {
+  font-family: "Fredoka", sans-serif;
+  margin: 3vw 0 3vw 0;
+  font-weight: 450;
+}
+.process ul li p {
+  font-family: "Urbanist", sans-serif;
+}
+
+/* === FOOTER === */
+
+footer {
+  background: black;
+  text-align: center;
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  margin: 10vw 2vw 10vw 2vw;
+  border-radius: 15px;
+  padding: 5vw 20vw 5vw 20vw;
+}
+footer p{
+    font-size: 17px;
+    margin: 3vw ;
+}
+footer img{
+    margin-right: 2vw;
+}
+
+/* MEDIA QUERY - DESKTOP */
+@media screen and (min-width: 600px) {
+
+    /* === HEADER === */
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin: 5vw 3vw 5vw 3vw;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2vw;
+        gap: 20px;
+    }
+    nav ul li a{
+      margin-top: 2vw;
+    }
+    header h1{
+        margin-top: 2vw;
+    }
+
+    /* === SECTION.WEB === */
+
+.web{
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+}
+.web h2{
+    font-size: 35px;
+    margin: 0 0 2vw 0 ;
+}
+.web a{
+    background: #e9eaf8;
+    margin: 3vw 0 0 0;
+    font-size: 20px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 50px;
+}
+
+/* === SECTION. PROCESS === */
+
+.process h2{
+    font-size: 1.2rem;
+}
+.process ul {
+    display: flex;
+    gap: 7vw;
+   
+}
+.process ul li{
+     margin-top: 3vw;
+}
+.process ul li h3{
+    font-size: 27px;
+}
+.process p{
+    font-size: 22px;
+}
+   
+}
