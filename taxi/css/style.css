@@ -1,9 +1,53 @@
 html {
-  font-size: clamp(1rem, calc(0.5rem + 2vw), 1.625rem);
+  font-size: clamp(1rem, calc(0.7rem + 1vw), 1.625rem);
   h1 h2 h3 h4 h5 h6{
   font-family: "Valley Sans", sans-serif;
   }
-  p a{
+  a {
+    font-family: "Oswald", sans-serif;
+  }
+  p {
     font-family: "Oswald", sans-serif;
   }
 }
+header{
+    text-align: center;
+    padding: 5vw ;
+}
+header ul li a.log{
+    color: #FBBC05;
+}
+header ul li a.botao{
+    background-color: #FBBC05;
+    color: white;
+    padding: 8px 16px 8px 16px;
+    display: inline-block;
+    border-radius: 5vw;
+
+}
+header nav ul li{
+ margin: 4px;
+ font-weight: 600;
+}
+
+
+
+
+/* ===== BOTSTRAP -==== */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) {
+	header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        font-size:17px;
+
+    }
+    header{
+        padding: 2vw 5vw 2vw 5vw;
+    }
+} 
