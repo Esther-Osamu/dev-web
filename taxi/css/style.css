@@ -40,7 +40,9 @@ header nav ul li {
 
 section.bnr {
     background: url(../images/background-banner.png) no-repeat;
+    /* nao repetir a imagem de fundo*/
     background-size: 100% 100%;
+    /* preencher todo o espaço */
     padding: 3vw 5vw 3vw 5vw;
     margin-top: 6vw;
 }
@@ -59,7 +61,7 @@ section.bnr h2 {
 }
 
 section.bnr p {
-    font-size: 18px;
+    font-size: 0.9rem;
     color: #737373;
     text-align: center;
     margin-top: 20px;
@@ -71,7 +73,7 @@ section.bnr p a {
     color: white;
     align-items: center;
     padding: 3vw 6vw 3vw 6vw;
-    font-size: 16px;
+    font-size: 0.8rem;
     border-radius: 15px;
     gap: 3vw;
     justify-content: space-between;
@@ -86,6 +88,61 @@ section.bnr p.btns {
 
 section.bnr p.btns img {
     height: 50%;
+}
+
+.ready {
+    text-align: center;
+    margin: 6vw 5vw 6vw 5vw;
+}
+
+.ready div.img {
+    display: none;
+    /* ocutar a imagem*/
+}
+
+section.ready h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 550;
+    margin: 0 0 3vw 0;
+    color: #252B42;
+
+}
+
+.ready p {
+    color: gray;
+    font-size: 0.8rem;
+    margin: 0 0 8vw 0;
+}
+
+.ready div.lista ul li h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.download {
+    text-align: center;
+    background-color: #FBBC05;
+    padding: 20vw 15vw 20vw 15vw;
+    border-radius: 10px;
+    color: white;
+    margin: 3vw 5vw 3vw 5vw;
+}
+
+.download h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 550;
+    margin: 3vw 0 3vw 0;
+}
+.download a{
+    background-color: #252B42;
+    border-radius: 7px;
+    padding: 4vw 6vw 4vw 6vw;
+    color: white;
+    margin-top: 6vw;
 }
 
 /* ===== BOTSTRAP -==== */
@@ -116,6 +173,7 @@ section.bnr p.btns img {
 
     section.bnr div.img {
         display: block;
+        /* fazer a imagem reaparecer*/
     }
 
     section.bnr h2 {
@@ -123,17 +181,55 @@ section.bnr p.btns img {
         text-align: left;
     }
 
-    section.bnr p.btns a{
+    section.bnr p.btns a {
         padding: 10px 30px 10px 30px;
         text-align: center;
-        gap:10px;
+        gap: 10px;
     }
 
     section.bnr p {
-        font-size: 25px;
+        font-size: 1.2rem;
         text-align: left;
     }
+
     section.bnr p.btns img {
         width: 70%;
+    }
+
+    .ready>p {
+        padding: 0 30% 0 30%;
+        /* > = filho direto , para cair a linha*/
+    }
+
+    .ready div.img {
+        display: block;
+    }
+
+    .ready>div {
+        display: flex;
+        justify-content: center;
+        gap: 10vw;
+    }
+
+    .ready div.lista ul {
+        display: flex;
+        flex-wrap: wrap;
+        /* qunado acabar o espaço disponivel a linha vai cair*/
+        gap: 20px;
+        width: 40vw;
+
+
+    }
+
+    .ready div.lista ul li {
+        width: 40%;
+        /* para nao ocupar todo o espaço disponivel*/
+    }
+    .download {
+        padding: 3vw 3vw 3vw 3vw;
+        
+    }
+    .download p{
+        width: 20%;
     }
 }
